@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dave's Portfolio</title>
+	<style>
+	
+		body {
+			background-image: url('bg.JPG');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: serif;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
+
+	
+		.hero-section {
+			background-color: lightcyan;
+			padding: 15px 20px;
+			margin-bottom: 20px;
+		}
+
+	
+		.small-center-img {
+			display: block;
+			width: 140px;
+			height: 140px;
+			margin: 0 auto 8px auto;
+			object-fit: contain;
+		}
+
+		h1 {
+			color: #0c2461;
+			font-weight: bolder;
+			font-size: 38px;
+			margin: 5px 0;
+		}
+
+		.highlight-name {
+			color: #00a8ff;
+		}
+
+		h3 {
+			font-weight: bolder;
+			color: #4b6584;
+			margin-top: 3px;
+			margin-bottom: 5px;
+		}
+
+	
+		.Title {
+			background-color: #0c2461;
+			text-align: center;
+			width: 60%;
+			max-width: 600px;
+			margin: 30px auto 20px auto;
+			padding: 10px;
+			border-radius: 20px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+		}
+
+		h2 {
+			color: white;
+			font-size: 24px;
+			margin: 0;
+		}
+
+	
+		.main-container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.about-text {
+			font-size: 18px;
+			color: #2c3e50;
+			margin-bottom: 40px;
+		}
+
+	
+		.games-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.work-caption {
+			font-size: 22px;
+			font-weight: bolder;
+			font-style: normal;
+			color: #0c2461;
+			margin: 0 0 10px 0;
+		}
+
+		.work-card {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 25px;
+			width: 100%;
+			max-width: 700px;
+			padding: 20px;
+		}
+
+		.game-column {
+			width: 300px;
+		}
+
+		.work-img {
+			width: 100%;
+			border-radius: 8px;
+			border: 2px dashed #00a8ff;
+		}
+
+		.work-details {
+			text-align: left;
+		}
+
+		.work-details ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.work-details li {
+			font-size: 16px;
+			margin-bottom: 10px;
+			color: #2c3e50;
+		}
+
+		.work-details li::before {
+			content: "✓ ";
+			color: #2ed573;
+			font-weight: bold;
+		}
+
+	
+		.form-card {
+			max-width: 500px;
+			margin: 0 auto 40px auto;
+			padding: 25px;
+			text-align: left;
+		}
+
+		.form-card label {
+			display: block;
+			font-weight: bold;
+			margin-top: 12px;
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
+
+		.form-card input[type="text"],
+		.form-card input[type="email"],
+		.form-card select,
+		.form-card textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+
+		.radio-group, .checkbox-group {
+			margin-top: 5px;
+			font-size: 14px;
+		}
+
+		.submit-btn {
+			width: 100%;
+			background-color: #0c2461;
+			color: white;
+			border: none;
+			padding: 12px;
+			font-size: 16px;
+			font-weight: bold;
+			border-radius: 6px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		.submit-btn:hover {
+			opacity: 0.9;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="hero-section">
+		<img src="guy.png" alt="Profile Avatar" class="small-center-img">
+		<h1>Hello, I'm <span class="highlight-name">Dave</span></h1>
+		<h3>Aspiring Web Developer</h3>
+	</div>
+
+	<div class="main-container">
+
+	
+		<div id="about">
+			<div class="Title">
+				<h2>About Me</h2>
+			</div>
+			<p class="about-text">
+				Hi! I'm Dave, a student passionate about technology, especially in web development. I enjoy creating simple and functional web projects.
+			</p>
+		</div>
+
+		
+		<div id="works">
+			<div class="Title">
+				<h2>My Works</h2>
+			</div>
+
+			<div class="games-container">
+
+				
+				<div>
+					<p class="work-caption">My Mobile Recommendation</p>
+					<div class="work-card">
+						<div class="game-column">
+							<img src="mobile.png" alt="Mobile Recommendation" class="work-img">
+						</div>
+						<div class="work-details">
+							<ul>
+								<li>HTML & CSS Projects</li>
+								<li>Mobile Recommendation</li>
+								<li>List, Links, and Images</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				
+				<div>
+					<p class="work-caption">My Rate a Movie Form</p>
+					<div class="work-card">
+						<div class="game-column">
+							<img src="game.png" alt="Movie Form Project" class="work-img">
+						</div>
+						<div class="work-details">
+							<ul>
+								<li>HTML & CSS Projects</li>
+								<li>HTML Forms</li>
+								<li>Movie Recommendations</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+		<div id="contact">
+			<div class="Title">
+				<h2>Contact Me</h2>
+			</div>
+
+			<div class="form-card">
+				<form id="contactForm">
+					<label for="name">Your Name:</label>
+					<input type="text" id="name" placeholder="Your Name" required>
+
+					<label for="email">Your Email:</label>
+					<input type="email" id="email" placeholder="dave@gmail.com" required>
+
+					<label>How did you find me?</label>
+					<div class="radio-group">
+						<input type="radio" name="find" id="fb"> <label for="fb" style="display:inline;">Facebook</label> 
+						<input type="radio" name="find" id="google"> <label for="google" style="display:inline;">Google</label> 
+						<input type="radio" name="find" id="friends"> <label for="friends" style="display:inline;">Friends</label>
+						<input type="radio" name="find" id="others"> <label for="others" style="display:inline;">Others</label>
+					</div>
+
+					<label>Interested In:</label>
+					<div class="checkbox-group">
+						<input type="checkbox" id="web"> <label for="web" style="display:inline;">Web Design</label> 
+						<input type="checkbox" id="graphic"> <label for="graphic" style="display:inline;">Graphic Design</label> 
+						<input type="checkbox" id="robotics"> <label for="robotics" style="display:inline;">Robotics</label>
+					</div>
+
+					<label for="rating">Rate my Portfolio:</label>
+					<select id="rating">
+						<option value="">-- Select Rating --</option>
+						<option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+						<option value="4">⭐⭐⭐⭐ Great</option>
+						<option value="3">⭐⭐⭐ Good</option>
+						<option value="2">⭐⭐ Fair</option>
+						<option value="1">⭐ Poor</option>
+					</select>
+
+					<label for="feedback">Any Feedback?</label>
+					<textarea id="feedback" rows="4" placeholder="Feedback here..."></textarea>
+
+					<button type="submit" class="submit-btn">Submit</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
